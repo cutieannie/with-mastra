@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@ag-ui/mastra": "0.2.0",
-    "@ai-sdk/openai": "^2.0.42",
+    "@ai-sdk/google": "^1.2.29",
     "@copilotkit/react-core": "1.10.6",
     "@copilotkit/react-ui": "1.10.6",
     "@copilotkit/runtime": "1.10.6",

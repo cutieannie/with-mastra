@@ -1,4 +1,4 @@
-import { openai } from "@ai-sdk/openai";
+import { google } from "@ai-sdk/google";
 import { Agent } from "@mastra/core/agent";
 import { weatherTool } from "@/mastra/tools";
 import { LibSQLStore } from "@mastra/libsql";
@@ -12,7 +12,7 @@ export const AgentState = z.object({
 export const weatherAgent = new Agent({
   name: "Weather Agent",
   tools: { weatherTool },
-  model: openai("gpt-4o"),
+  model: google("gemini-2.5-flash"),
   instructions: "You are a helpful assistant.",
   memory: new Memory({
     storage: new LibSQLStore({ url: "file::memory:" }),
